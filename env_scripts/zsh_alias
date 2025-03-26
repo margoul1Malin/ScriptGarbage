@@ -1,0 +1,18 @@
+# Sys Utils
+alias maj='sudo apt update && sudo apt full-upgrade -y'
+alias ipa='ip -c -br a'
+alias li='ls -li'
+alias sudo='sudo '
+alias rmall='rm -rf *'
+
+# Hack3 Ut1ls
+alias find-suid='find / -type f -perm -4000 2>/dev/null'
+
+# Temp/Misc Aliases
+alias hakboardz='/home/margoul1/HakBoard/run_with_xhost.sh'
+alias git-token='cat ~/ScriptGarbage/pat.txt'
+alias back="cd -"
+
+
+# Colors
+

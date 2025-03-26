@@ -257,12 +257,18 @@ if [ -f /etc/zsh_command_not_found ]; then
 fi
 
 
-echo "Chargement de .zsh_alias..."
+if [ -f ~/.zsh_colors ]; then
+   . ~/.zsh_colors
+fi
+
+echo "${BOLD_RED}Chargement des alias...${RESET}"
 if [ -f ~/.zsh_alias ]; then
    . ~/.zsh_alias
 fi
 
-echo "Chargement de .zsh_functions..."
+echo "${BOLD_RED}Chargement des fonctions...${RESET}"
 if [ -f ~/.zsh_functions ]; then
    . ~/.zsh_functions
 fi
+
+echo "${BOLD_GREEN}Charge Succeded"
